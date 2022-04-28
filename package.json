@@ -14,6 +14,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "launch": "next build && next start",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"**/*.+(ts|js|tsx)\" --write",
@@ -27,11 +28,13 @@
     ]
   },
   "dependencies": {
+    "@prisma/client": "3.13.0",
     "@tailwindcss/forms": "0.5.0",
     "@tailwindcss/typography": "0.5.2",
     "autoprefixer": "10.4.5",
     "lit-js-sdk": "1.1.170",
     "next": "12.1.5",
+    "prisma": "3.13.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "tailwindcss": "3.0.24"
